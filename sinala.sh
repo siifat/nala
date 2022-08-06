@@ -10,4 +10,4 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 
 #updating & installing nala
 
-#sudo apt update && sudo apt install nala
+sudo apt update && sudo apt install nala
