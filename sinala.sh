@@ -85,8 +85,10 @@ Done"
 echo "
 
 
+
 Installing Firefox....."
-sudo nala install firefox gdebi lightdm xfce4 xfce4-goodies xfce4-whiskermenu-plugin xfce4-panel ubuntu-drivers-common -yy
+sudo nala install firefox gdebi lightdm xfce4 xfce4-goodies xfce4-whiskermenu-plugin xfce4-panel ubuntu-drivers-common neofetch \
+synaptic -yy
 
 
 echo "
@@ -99,7 +101,10 @@ sudo echo "[SeatDefaults]
 autologin-user=sifat" >> /etc/lightdm/lightdm.conf
 
 
-echo "installing ubuntu-drivers...."
+echo "
+
+
+installing ubuntu-drivers...."
 sudo ubuntu-drivers autoinstall
 
 
