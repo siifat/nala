@@ -29,7 +29,7 @@ echo "
 
 Stopping Snaps from coming back...."
 sudo touch /etc/apt/preferences.d/nosnap.pref
-echo "# To prevent repository packages from triggering the installation of Snap,
+sudo echo "# To prevent repository packages from triggering the installation of Snap,
 # this file forbids snapd from being installed by APT.
 # For more information: https://linuxmint-user-guide.readthedocs.io/en/latest/snap.html
 
@@ -46,7 +46,7 @@ Installing Firefox non-snap...."
 
 sudo add-apt-repository ppa:mozillateam/ppa -y
 sudo touch /etc/apt/preferences.d/firefox-no-snap
-echo "Package: firefox*
+sudo echo "Package: firefox*
 Pin: release o=Ubuntu*
 Pin-Priority: -1" >> /etc/apt/preferences.d/firefox-no-snap
 
@@ -95,7 +95,7 @@ echo "
 
 Enabling Autologin with lightdm...."
 sudo touch /etc/lightdm/lightdm.conf
-echo "[SeatDefaults]
+sudo echo "[SeatDefaults]
 autologin-user=sifat" >> /etc/lightdm/lightdm.conf
 
 
