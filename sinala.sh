@@ -24,4 +24,7 @@ Installing Nala for you...."
 
 sudo apt update -qq && sudo apt install nala -yyqq
 
-echo "Done"
+echo "
+
+
+Done"
