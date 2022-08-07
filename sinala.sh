@@ -3,7 +3,10 @@
 
 #adding repos for nala
 
-echo "Adding repos for Nala....
+echo "
+
+
+Adding repos for Nala....
 
 "
 echo "deb https://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
@@ -14,20 +17,11 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 
 #updating & installing nala
 
-echo "Installing Nala for you...."
-
-i=1
-sp="/-\|"
-echo -n ' '
-while true
-do
-    printf "\b${sp:i++%${#sp}:1}"
-done"
-
-sudo apt update -qq && sudo apt install nala -yyqq
-
-
 echo "
 
 
-Done!"
+Installing Nala for you...."
+
+sudo apt update -qq && sudo apt install nala -yyqq
+
+echo "Done"
