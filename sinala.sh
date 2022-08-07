@@ -14,7 +14,8 @@ wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gp
 
 #updating & installing nala
 
-echo "Installing Nala for you....
+echo "Installing Nala for you...."
+
 i=1
 sp="/-\|"
 echo -n ' '
@@ -23,7 +24,10 @@ do
     printf "\b${sp:i++%${#sp}:1}"
 done"
 
-sudo apt update -qq && sudo apt install nala -yq
+sudo apt update -qq && sudo apt install nala -yyqq
 
 
-echo "Done!"
+echo "
+
+
+Done!"
